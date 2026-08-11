@@ -1,0 +1,8 @@
+{
+  "updatedAt": "2026-08-11T22:44:00.151Z",
+  "command": "init",
+  "gitHead": "78980ee463b900226e48b956ae53a6f799ad8cc1",
+  "model": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+  "status": "complete",
+  "language": "en"
+}

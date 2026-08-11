@@ -1,0 +1,32 @@
+# Files
+
+- [OmniGibson Action Primitives](action_primitives.md) - ActionPrimitiveSetBase, Curobo motion planning integration, starter semantic primitives, symbolic primitives — high-level action skills for robots.
+- [OmniGibson Configuration](configs.md) - Config file structure — default_cfg.yaml, sensor/robot/controller YAML configs, config merging (merge_nested_dicts), config precedence.
+- [OmniGibson Controllers](controllers.md) - Controller hierarchy — IK, OSC, Joint, Gripper, Differential Drive, Holonomic controllers, ControllerView, and registered controller registry.
+- [OmniGibson Data Wrappers](data_wrappers.md) - Deep-dive on HDF5DataWrapper, LeRobotDataWrapper — output formats, video recording, checkpointing, and episode filtering.
+- [OmniGibson Environment Wrappers](env_wrappers.md) - EnvironmentWrapper, DataWrapper family, MetricsWrapper, HDF5/LeRobot wrappers, wrapper factory pattern for environment composition.
+- [OmniGibson Environment](environments.md) - Base Environment class — Gymnasium-compatible interface, config merging, step/reset lifecycle, observation/action spaces.
+- [OmniGibson Examples](examples.md) - Example ecosystem — environments, learning, objects, robots, scenes, sensors, object_states, teleoperation, and WIP demos.
+- [OmniGibson Macros & Global Configuration](macros.md) - MacroDict system — immutable, lazy-evaluated configuration with module-level scoping, read-locking, and all runtime configuration knobs.
+- [OmniGibson Maps](maps.md) - SegmentationMap and TraversableMap — spatial maps for semantic segmentation and navigation traversability.
+- [OmniGibson Metrics](metrics.md) - MetricBase, AgentMetric, TaskMetric — evaluation metrics for agent and task performance during episodes.
+- [OmniGibson Object States](object_states.md) - 40+ dynamic state classes (OnTop, Filled, Cooked, Open, etc.), ObjectStateFactory dependency-ordered initialization, ability_dependencies, and state taxonomy.
+- [OmniGibson Object Classes](objects.md) - USDObject base class, DatasetObject, PrimitiveObject, LightObject — object abstraction, state tracking, abilities, and the object registry.
+- [OmniGibson Overview](overview.md) - Architecture overview of the OmniGibson simulation engine — registry pattern, config-driven design, lifecycle, lazy imports, and component hierarchy.
+- [OmniGibson USD Primitives](prims.md) - USD primitive layer — BasePrim → XFormPrim → GeomPrim → RigidPrim → EntityPrim → ClothPrim → JointPrim → MaterialPrim, the low-level abstraction over Isaac Sim's USD stage.
+- [OmniGibson Registries](registries.md) - Complete inventory of all REGISTERED_* dicts — what can be registered, how registration works, config-to-registry mapping, and full entry list.
+- [OmniGibson Reward Functions](reward_functions.md) - BaseRewardFunction, REGISTERED_REWARD_FUNCTIONS, each reward type (PointGoalReward, CollisionReward, GraspReward, PotentialReward, ReachingGoalReward) with implementation details.
+- [OmniGibson Robot Definition Schema](robot_schema.md) - JSON schema for robot YAML definitions, the RobotDefinition and EndEffectorDefinition classes that validate robot configuration files.
+- [OmniGibson Robot Class](robots.md) - The monolithic Robot class — arm+base+gripper control, proprioception, grasping modes, YAML-config-driven robot definitions, and controller composition.
+- [OmniGibson Scene Graphs](scene_graphs.md) - GraphBuilder — spatial relationship graphs for objects in a scene, used for task planning and state reasoning.
+- [OmniGibson Scenes](scenes.md) - Scene, TraversableScene, InteractiveTraversableScene — scene loading, asset handling, object placement, and reset behavior.
+- [OmniGibson Scripts](scripts.md) - CLI scripts — sampling/ (task generation), learning/ (data pipeline scripts), profiling scripts.
+- [OmniGibson Sensors](sensors.md) - VisionSensor (RGB, depth, seg, normal), ScanSensor (LiDAR), sensor modalities, sensor noise, and observation space configuration.
+- [OmniGibson Simulator](simulator.md) - The monolithic Simulator singleton — physics engine, scene loading, USD manipulation, step lifecycle, and Isaac Sim integration.
+- [OmniGibson State Mechanics](state_mechanics.md) - State update lifecycle — pre-step, post-step, reset phases, dependency-ordered initialization, and state mixin behavior.
+- [OmniGibson Systems](systems.md) - Particle systems — ParticleSystem, PhysicalParticleSystem, VisualParticleSystem, MacroPhysicalParticleSystem, Micro (fluid/granular/cloth) — for fluid, granular, and cloth simulation.
+- [OmniGibson Tasks](tasks.md) - BaseTask, BehaviorTask, GraspTask, PointNavigationTask, PointReachingTask, DummyTask — RL task definitions, goal sampling, and BDDL integration.
+- [OmniGibson Termination Conditions](termination.md) - Termination conditions — Falling, GraspGoal, MaxCollision, PointGoal, PredicateGoal, ReachingGoal, Timeout, with registry and success/failure categorization.
+- [OmniGibson Tests](tests.md) - Test strategy — 25+ test files, CI test matrix, skipped tests, conftest.py fixtures, snapshot tests, benchmark tests.
+- [OmniGibson Transition Rules](transition_rules.md) - TransitionRuleAPI class, REGISTERED_RULES, ObjectAttrs/TransitionResults, recipe execution (CookingRecipe, MixingRecipe, MachineRecipe, SubstanceCookingRecipe, WasherRecipe), particle system interactions.
+- [OmniGibson Utilities](utils.md) - Key utility modules — transform_utils, config_utils, bddl_utils (bridge to BDDL3), asset_utils, registry_utils, python_utils, and more.
